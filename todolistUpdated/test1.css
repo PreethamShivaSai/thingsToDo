@@ -1,0 +1,29 @@
+
+*{
+	margin:0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+#spn1{
+	display: none;
+}
+body{
+	height: 100%;
+}
+.popup{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#spn1{
+	width: 200px;
+	height: 200px;
+	border: 2px solid white;
+	background: grey;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}

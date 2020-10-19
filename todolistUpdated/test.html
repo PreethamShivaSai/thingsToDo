@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="test1.css">
+	<title>test</title>
+</head>
+<body>
+	<div class="popup">
+		<div class="popuptxt" id="spn" onclick="func()" style="display: inline-block;">
+			click to see a pop up
+		</div>
+		
+	</div>
+	<div id="spna1">
+		<!-- <div class="row"style="text-align: center; height:">
+			<span >Message </span>
+			<span style="float:right;">&#10005;</span>
+		</div> -->
+		<button id="btn">
+			click to add element
+		</button>
+	</div>
+</body>
+<script type="text/javascript" src="jquery.min.js">
+</script>
+<script type="text/javascript">
+	function func(){
+		var i=document.getElementById('spn1');
+		if(i.style.display=='none'){
+			i.style.display='block';
+		}
+		else{
+			i.style.display='none';
+		}
+	}
+	// function addel(){
+	// 	var e=document.createElement('div');
+	// 	e.setAttribute('id','d');
+	// 	$("spna1").after("<i>hi</i>");
+	// 	// document.getElementById('d').innerHTML="hi";
+	// }
+	$('#btn').click(function(){
+		$('#spna1').after('<div>Hi</div>');
+	})
+</script>
+</html>
